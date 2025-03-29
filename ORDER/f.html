@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order Gas $ Accessories-jullek maskanis</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; margin: 20px;padding: 20px;background-color: #f4f4f4;}
+.container{max-width: 400px;background: white;padding: 20px;border-radius: 8px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+label{font-weight: bold;display: block;margin: 10px 0 5px;}
+input, select, buttton {width: 100%;padding: 10px;margin-top: 5px;box-sizing: border-box;}
+button{background-color: #ff6600;color: white;border: none;cursor: pointer;}
+button:hover{background-color: #cc5500;}
+.till-number{font-size: 16px;font-weight: bold;color:red;margin-top: 10px;}
+ </style>
+</head>
+<body>
+    <div class="container">
+        <h2>order gas $ accesories</h2>
+        <form id="orderForm">
+            <label for="product">select product:</label>
+            <select id="product" required>
+                <option value="3kg cylinder">3kg cylinder-995 KES</option>
+                <option value="6kg cylinder">6kg cylinder-1390 KES</option>
+                <option value="13kg cylinder">13kg cylinder-3190 KES</option>
+                <option value="22.5kg cylinder">22.5kg cylinder-5600 KES</option>
+                <option value="50kg cylinder">50kg cylinder-11000 KES</option>
+                <option value="Burner">burner-1000 KES</option>
+                <option value="Regulator">Regulator-1000 KES</option>
+                <option value="Hosepipe">Hosepipe-200 KES per meter</option>
+                <option value="2 Burner Cooker">2 Burner Cooker-5500 KES</option>
+            </select>
+            <label for="Quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+            <label for="Branch">Select Pickup Branch</label>
+            <select id="branch" required>
+           <option value="Kikuyu Maskani">kikuyu branch</option>
+           <option value="Magana Maskani">magana branch</option>
+           <option value="Zambezi Maskani">zambezi branch</option>
+           <option value="Rironi Maskani">Rironi branch</option>
+           <option value="Muguga Maskani">Muguga branch</option>
+           <option value="Gikambura Maskani">Gikambura branch</option>
+           <option value="Rimpa Maskani-Kitengela">kitengela branch</option>
+           <option value="Syokimau Maskani">syokimau branch</option>
+           <option value="Ngong Maskani">Ngong branch</option>
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <div class="till-number">Till Number for Payment: <strong>709343</strong></div>
+          <button type="submit">place order</button>
+        </form>
+        <p id="confirmation" style="color: green; font-weight: bold;display: none;">order placed successfully!</p>
+
+    </div>
+    
+</body>
+</html>
